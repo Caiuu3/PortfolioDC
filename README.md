@@ -19,10 +19,10 @@
 
 :monocle_face:
 
-1- descrição do projeto que será desenvolvido.<p>
+1- descrição do projeto que será desenvolvido.  
 O projeto consiste no desenvolvimento de uma página web com o objetivo de divulgar, promover e cadastrar eventos. A mesma irá necessitar de informações como: Nome, sobrenome, email, senha, CPF, CNPJ, nome do evento, data e horário, descrição e local.
 
-2- descrição do workflow utilizado no projeto.<p>
+2- descrição do workflow utilizado no projeto.  
 	A ideia central por trás do Fluxo de trabalho de ramificação de recursos é que todo desenvolvimento de recursos deve ocorrer em uma ramificação dedicada em vez de na ramificação principal. Esse encapsulamento facilita para vários desenvolvedores trabalharem em um recurso particular sem perturbar a base de código principal. Além disso, ele indica que a ramificação principal nunca deve conter código quebrado, o que é uma enorme vantagem para ambientes de integração contínua.
 
 3 Backlog inicial do projeto.
@@ -38,7 +38,7 @@ O projeto consiste no desenvolvimento de uma página web com o objetivo de divul
    - Criar página de cadastro com Nome, Email e CNPJ
    -Criar CSS para formatar a tela de cadastro
    -Criar JS para validar entrada de E-mail e CNPJ
-5- código implementando o 1 Sprint, publicado no repositório, conforme os padrões definidos no workflow.<p>
+5- código implementando o 1 Sprint, publicado no repositório, conforme os padrões definidos no workflow.  
 A ser definido.
 6- Casos de testes implementados para o código fonte do 1 Sprint.
  - Objetivo:
@@ -56,5 +56,5 @@ A ser definido.
   -Validar Senha é maior que 8 caracteres
   -Validar Senha menor de 16 caracteres
 
-7- descrição de como rodar os casos de teste.<p>
+7- descrição de como rodar os casos de teste.  
 	Rodará automaticamente no GitHub
