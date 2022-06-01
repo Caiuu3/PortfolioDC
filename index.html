@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Denúncia Anônima</title>
+</head>
+
+<body>
+    
+    <div>
+        <object height="111px" width="100%" data="./menu.html" class="menu"></object>
+    </div>
+
+    <div class="geral">
+
+        <form action="#" method="post" class="form">
+
+            <h1>Cadastro</h1>
+
+            <div class="campo-duplo">
+                <div>
+                    <label>Nome
+                        <input type="text" id="nome" name="nome" placeholder="Nome" autocomplete="off">
+                    </label>
+                </div>
+                <div>
+                    <label>Sobrenome
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="off">
+                    </label>
+                </div>
+            </div>
+
+            <div class="campo-duplo">
+                <div>
+                    <label>E-mail
+                        <input type="text" id="email" name="email" placeholder="email@email.com">
+                    </label>
+                </div>
+                <div>
+                    <label>Senha
+                        <input type="text" id="senha" name="senha" placeholder="off">
+                    </label>
+                </div>
+            </div>
+
+            <div class="campo-duplo">
+                <div>
+                    <label>CPF/CNPJ
+                        <input type="text" id="cpf" name="cpf" placeholder="cpf/cnpj">
+                    </label>
+                </div>
+                <div>
+                    <label>Nome do evento
+                        <input type="number" id="evento" name="evento" placeholder="Nome do evento">
+                    </label>
+                </div>
+            </div>
+
+            <div class="campo-duplo">
+                <div>
+                    <label>Data
+                        <input type="text" id="data" name="data" placeholder="data">
+                    </label>
+                </div>
+                <div>
+                    <label>Horario
+                        <input type="text" id="hora" name="hora" placeholder="hora">
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="campo-duplo">
+                <label>descricao
+                    <input type="text" id="descricao" name="descricao" placeholder="descricao">
+                </label>
+            </div>
+
+            <div class="descricao">
+                <textarea rows="4" id="descricao" placeholder="Digite aqui a Descrição" maxlength="300"></textarea>
+            </div>
+
+            <div class="campo">
+                <label>enviar um arquivo
+                    <input type="file">
+                </label>
+            </div>
+            <div>
+                <p>Ao confirmar seu eventos, você concorda que leu e aceitou os nossos termos de uso.</p>
+            </div>
+            <div class="botoes">
+                <a href="../index.html"><button>Cancelar</button></a>
+                <button type="reset" value="Clear">Limpar</button>
+                <a><button id="confirmar" type="button" value="submit">Confirmar</button></a>
+            </div>
+
+        </form>
+
+    </div>
+    <script src="./index.js" language="javascript"></script>
+</body>
+
+</html>
