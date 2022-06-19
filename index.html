@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <title>Denúncia Anônima</title>
+    <title>Cadastro Evento</title>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
                 </div>
                 <div>
                     <label>Sobrenome
-                        <input type="text" id="sobrenome" name="sobrenome" placeholder="off">
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="digite seu sobrenome...">
                     </label>
                 </div>
             </div>
@@ -39,12 +39,12 @@
             <div class="campo-duplo">
                 <div>
                     <label>E-mail
-                        <input type="text" id="email" name="email" placeholder="email@email.com">
+                        <input type="text" id="email" name="email" placeholder="exemplo@email.com">
                     </label>
                 </div>
                 <div>
-                    <label>Senha
-                        <input type="text" id="senha" name="senha" placeholder="off">
+                    <label>Token de acesso
+                        <input type="password" id="token" name="token" placeholder="Digite sua senha...">
                     </label>
                 </div>
             </div>
@@ -52,52 +52,65 @@
             <div class="campo-duplo">
                 <div>
                     <label>CPF/CNPJ
-                        <input type="text" id="cpf" name="cpf" placeholder="cpf/cnpj">
+                        <input type="text" id="cpf" name="cpf" placeholder="000.203/000">
+                        
+                    </label>
+                    
+                    <div class=data>
+
+                <label>Data
+                        <input type="date" id="data" name="data">
+                        
                     </label>
                 </div>
+                    
+                </div>
                 <div>
+                    
                     <label>Nome do evento
-                        <input type="number" id="evento" name="evento" placeholder="Nome do evento">
+                        <input type="text" id="evento" name="evento" placeholder="Nome do evento">
+                        
+                    </label>
+                    <div class="time">
+
+                    <label>Horário
+                        <input type="time" id="hora" name="horário">
+                        
                     </label>
                 </div>
+                    
+                    
+                </div>
+                
             </div>
 
             <div class="campo-duplo">
-                <div>
-                    <label>Data
-                        <input type="text" id="data" name="data" placeholder="data">
-                    </label>
-                </div>
-                <div>
-                    <label>Horario
-                        <input type="text" id="hora" name="hora" placeholder="hora">
-                    </label>
-                </div>
+               
+                
             </div>
 
 
-            <div class="campo-duplo">
-                <label>descricao
-                    <input type="text" id="descricao" name="descricao" placeholder="descricao">
+            <div class="descricao">
+                <label>Descrição do evento
+                    
                 </label>
             </div>
 
             <div class="descricao">
-                <textarea rows="4" id="descricao" placeholder="Digite aqui a Descrição" maxlength="300"></textarea>
+                <textarea rows="4" id="descricao" placeholder="Digite aqui a Descrição..." maxlength="300"></textarea>
             </div>
 
             <div class="campo">
-                <label>enviar um arquivo
-                    <input type="file">
-                </label>
+                <label>Envie o flyer do seu evento.</label>
+                <input type="file">
             </div>
             <div>
-                <p>Ao confirmar seu eventos, você concorda que leu e aceitou os nossos termos de uso.</p>
+                <p>Ao confirmar seu eventos, você concorda que leu e aceitou os nossos <b>termos de uso.</b></p>
             </div>
             <div class="botoes">
                 <a href="../index.html"><button>Cancelar</button></a>
                 <button type="reset" value="Clear">Limpar</button>
-                <a><button id="confirmar" type="button" value="submit">Confirmar</button></a>
+                <a><button id="confirmar" type="button" value="submit" onclick="Validar()">Confirmar</button></a>
             </div>
 
         </form>
